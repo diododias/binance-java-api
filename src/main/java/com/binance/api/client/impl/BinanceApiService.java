@@ -153,7 +153,7 @@ public interface BinanceApiService {
 
     @Headers(BinanceApiConstants.ENDPOINT_SECURITY_TYPE_SIGNED_HEADER)
     @GET("/api/v3/myTrades")
-    Call<List<Trade>> getMyTradesByOrderId(@Query("symbol") String symbol, @Query("orderId") Long orderId);
+    Call<List<Trade>> getMyTradesByOrderId(@Query("symbol") String symbol, @Query("orderId") Long orderId, @Query("timestamp") Long timestamp);
 
     @Headers(BinanceApiConstants.ENDPOINT_SECURITY_TYPE_SIGNED_HEADER)
     @POST("/wapi/v3/withdraw.html")

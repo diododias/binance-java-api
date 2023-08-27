@@ -231,7 +231,7 @@ public interface BinanceApiRestClient {
    */
   Account getAccount();
 
-  List<Trade> getMyTradesByOrderId(String symbol, Long orderId);
+  List<Trade> getMyTradesByOrderId(String symbol, Long orderId, Long timestamp);
 
   /**
    * Get trades for a specific account and symbol.
