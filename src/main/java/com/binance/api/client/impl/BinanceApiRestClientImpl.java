@@ -206,8 +206,8 @@ public class BinanceApiRestClientImpl implements BinanceApiRestClient {
 	}
 
 	@Override
-	public List<Trade> getMyTradesByOrderId(String symbol, Long orderId) {
-		return executeSync(binanceApiService.getMyTradesByOrderId(symbol, orderId));
+	public List<Trade> getMyTradesByOrderId(String symbol, Long orderId, Long timestamp) {
+		return executeSync(binanceApiService.getMyTradesByOrderId(symbol, orderId, timestamp));
 	}
 
 	@Override
